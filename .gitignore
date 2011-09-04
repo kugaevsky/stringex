@@ -6,3 +6,4 @@ github-test.rb
 pkg
 *.sqlite3
 *.gem
+.idea/
