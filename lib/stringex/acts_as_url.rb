@@ -48,7 +48,7 @@ module Stringex
         self.scope_for_url = options[:scope]
         self.url_attribute = options[:url_attribute] || "url"
         self.only_when_blank = options[:only_when_blank] || false
-        self.duplicate_count_separator = options[:duplicate_count_separator] || "-"
+        self.duplicate_count_separator = options[:duplicate_count_separator] || "_"
         self.allow_slash = options[:allow_slash] || false
 
         class_eval <<-"END"
