@@ -36,7 +36,7 @@ module Stringex
     # acts_as_url[link:classes/Stringex/ActsAsUrl/ClassMethods.html#M000012]
     # but can be called manually in order to generate an URI-friendly version of any string.
     def to_url(options = {})
-      remove_formatting(options).downcase.replace_whitespace("-").collapse("-")
+      remove_formatting(options).downcase.replace_whitespace("_").collapse("_")
     end
 
     # Performs multiple text manipulations. Essentially a shortcut for typing them all. View source
