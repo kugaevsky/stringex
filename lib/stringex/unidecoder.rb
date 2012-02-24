@@ -155,5 +155,10 @@ module Stringex
     def to_ascii
       Stringex::Unidecoder.decode(self)
     end
+
+    #
+    def to_latin_name
+      Stringex::Unidecoder.decode(self.force_encoding('utf-8')).split(' ').values_at(0, -1).join(' ')
+    end
   end
 end
